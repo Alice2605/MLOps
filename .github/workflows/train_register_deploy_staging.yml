@@ -61,10 +61,10 @@ jobs:
         run: | 
           echo "Deploy step placeholder: run docker-compose on staging host." 
 
-    staging_smoke_test: 
-      needs: deploy_staging 
-      runs-on: ubuntu-latest 
-      steps: 
-        - name: Smoke test placeholder 
-          run: | 
-            echo "In real life, curl staging /health and /predict here."
+  staging_smoke_test: 
+    needs: deploy_staging 
+    runs-on: ubuntu-latest 
+    steps: 
+      - name: Smoke test placeholder 
+        run: | 
+          echo "In real life, curl staging /health and /predict here."
